@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>씨엔티테크 액셀러레이터 관리자</title>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<meta property="og:image" content="resources/images/common/logo_300x300.png" />
+	<meta name="twitter:image" content="resources/images/common/logo_300x300.png">
+	<link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.ico" />
+
+	<!-- style -->
+	<link rel="stylesheet" href="resources/css/cntir_adm.css" media="all">
+
+	<!-- javascript -->
+	<script src="resources/js/lib/jquery-1.12.4.min.js"></script>
+	<script src="resources/js/lib/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="resources/js/lib/html5Shiv.js"></script>
+	<![endif]-->
+	<script src="resources/js/plugins.js"></script>
+	<script src="resources/js/ui-front.js"></script>
+	<!-- //javascript -->
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더영역 -->
+        <header id="header">
+            <h1 class="logo"><a href="/admin/index.html"><img src="../resources/images/common/logo.png"/></a></h1>	
+            <div class="gnb_wrap">
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="notice.html"><i class="fa fa-inbox" aria-hidden="true"></i>공지/보도자료</a></li>
+                        <li><a href="tech.html"><i class="fa fa-film" aria-hidden="true"></i>테크본색</a></li>
+                        <li><a href="startUpTg.html"><i class="fa fa-location-arrow" aria-hidden="true"></i>전화성의 기술창업타겟</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="head_utile">
+                <h2 class="head_tit">씨엔티테크 액셀러레이터 관리자</h2>
+                <div class="user_info">
+                    <div class="user_info_cot">
+                        <a href="#popAdmin" class="pop_open"><span class="user_id">관리자<i class="fa fa-cogs" aria-hidden="true"></i></a></span> 님 반갑습니다!
+                        <a href="#" class="button btn_gray h22" id="">로그아웃</a>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <!-- //헤더영역 -->
+
+        <!-- 컨텐츠 영역 -->
+        <section id="container">
+            <div id="contents">
+                <h2 id="pageTit" class="page_tit">테크본색</h2>
+                <div class="cont_in">
+                    <div class="tbl_info">
+                        <div class="tit">■ 4차 산업혁명과 기술 혁신을 선도하고 있는 테크 이야기를  재미있고 소개합니다.</div>
+                    </div>
+                    <table class="table tbl_left">
+                        <caption>테크본색 등록</caption>
+                        <colgroup>
+                            <col style="width:200px;" />
+                            <col />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">제목</th>
+                                <td>
+                                    <input type="text" name="" id="" class="input w_100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">내용</th>
+                                <td>
+                                    <textarea class="textarea"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">영상링크</th>
+                                <td><input type="text" class="input w400"> <span>* 유투브 영상 url</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">목록사진</th>
+                                <td>
+                                    <span class="inp_file">
+                                        <input class="input" type="text" placeholder="첨부파일을 선택해주세요." title="첨부파일 선택">
+                                        <span class="btn_file">
+                                            <a href="#" class="button btn_gray">파일 찾기</a>
+                                            <input type="file" placeholder="내용입력" title="파일첨부">
+                                        </span>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">게시일</th>
+                                <td><span class="datepicker_wrap"><input class="input datepicker" type="text" title="날짜입력"></span> <span>* 변경시에만 수정하세요</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button_box">
+                        <a href="#" class="button btn_black h50 w150">등록</a>
+                        <a href="#" class="button btn_gray h50 w150 ml10">취소</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //컨텐츠 영역 -->
+
+        <!-- 푸터영역 -->
+        <footer id="footer">
+            <p class="copy">© 2019 CNTIR CO.LTD All RIGHT RESERVED</p>
+        </footer>
+        <!-- 푸터영역 -->
+    </div>
+
+    <!-- 팝업 영역 -->
+    <div id="popAdmin" class="pop_wrap">
+        <article class="popup">
+            <div class="pop_head">
+                <h1>관리자 설정</h1>
+            </div>
+            <div class="pop_cont">
+                <ul class="pop_inpbox">
+                    <li>
+                        <label>
+                            <strong class="lbl"><b>*</b>관리자 아이디</strong>
+                            <input type="text" name="" id="" class="input h40 readonly" readonly="readonly" value="admin">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <strong class="lbl"><b>*</b>현재 비밀번호</strong>
+                            <input type="password" name="" id="" class="input h40" >
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <strong class="lbl"><b>*</b>변경 할 비밀번호</strong>
+                            <input type="password" name="" id="" class="input h40" >
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <strong class="lbl"><b>*</b>변경 할 비밀번호 확인</strong>
+                            <input type="password" name="" id="" class="input h40" >
+                        </label>
+                    </li>
+                    <!-- <li class="mail">
+                        <label>
+                            <strong class="lbl"><b>*</b>이메일 주소</strong>
+                            <input type="text" name="" id="" class="input h40" >
+                        </label>
+                        <span class="ic">@</span>
+                        <input type="text" name="" id="" class="input h40" >
+                        <select name="" id="" class="select h40">
+                            <option value="">직접입력</option>
+                        </select>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="pop_foot">
+                <a href="" class="button w100 h50 btn_black pop_close">취소</a>
+                <a href="" class="button w100 h50 btn_red">저장</a>
+            </div>
+            <a href="#" class="btn_close pop_close">팝업닫기</a>
+        </article>
+    </div>
+    <!-- //팝업 영역 -->
+</body>
+</html>

@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* ==========================================================================
+   font
+   ========================================================================== */
+   @import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+/* @font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/resources/css/fonts/NanumBarunGothic.eot);
+    src: local('Nanum Barun Gothic'),
+         local('NanumBarunGothic'),
+         url(/resources/css/fonts/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+         url(/resources/css/fonts/NanumBarunGothic.woff2) format('woff2'),
+         url(/resources/css/fonts/NanumBarunGothic.woff) format('woff'),
+         url(/resources/css/fonts/NanumBarunGothic.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/resources/css/fonts/NanumBarunGothicBold.eot);
+    src: local('Nanum Barun Gothic Bold'),
+         local('NanumBarunGothicBold'),
+         url(/resources/css/fonts/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+         url(/resources/css/fonts/NanumBarunGothicBold.woff2) format('woff2'),
+         url(/resources/css/fonts/NanumBarunGothicBold.woff) format('woff'),
+         url(/resources/css/fonts/NanumBarunGothicBold.ttf) format('truetype');
+  } */

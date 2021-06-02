@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<meta property="og:locale" content="ko_KR" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="씨엔티테크 액셀러레이터" />
+	<meta property='og:title' content="CNT TECH ACCELERATOR" />
+	<meta property="og:url" content="">
+	<meta property="og:image" content="resources/images/common/logo_300x300.png" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:creator" content="씨엔티테크 액셀러레이터" />
+	<meta name="twitter:title" content="CNT TECH ACCELERATOR" />
+	<meta name="twitter:site"  content="">
+	<meta name="twitter:image" content="resources/images/common/logo_300x300.png">
+	<meta name="twitter:description" content="" />
+	<link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.ico" />
+
+	<!-- style -->
+	<link rel="stylesheet" href="resources/css/cntir.css" media="all">
+
+	<!-- javascript -->
+	<script src="resources/js/lib/jquery-1.12.4.min.js"></script>
+	<script src="resources/js/lib/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="resources/js/lib/html5Shiv.js"></script>
+	<![endif]-->
+	<script src="resources/js/plugins.js"></script>
+	<script src="resources/js/ui-front.js"></script>
+	<!-- //javascript -->
+</head>
+<body>
+    <div class="wrap">
+		<!-- header -->
+		<header>
+			<div class="inner">
+                <button onclick="history.go(-1)" class="btn_back"><span class="blind">뒤로가기</span></button>
+				<h1 id="logo"><a href="index.html" class="gnb_logo">CNTTECH ACCELERATOR</a></h1>
+                <h2 class="title"></h2>
+                <a href="#" class="btn_gnb_open"><span class="blind">전체메뉴</span><i></i></a>
+				<a href="#popShare" class="btn_share pop_open"><span class="blind">공유하기</span><i></i></a>
+				<div class="gnb_wrap">
+					<div class="gnb_top"><a href="index.html" class="gnb_logo">CNTTECH ACCELERATOR</a></div>
+					<nav id="gnb">
+						<ul>
+							<li><a href="index.html">스타트업 투자 철학</a></li>
+							<li><a href="investmentAven.html">투자 어벤져스</a></li>
+							<li><a href="portfolio.html">포트폴리오</a></li>
+							<li><a href="investmentQa.html">드루와</a></li>
+							<li><a href="noticeList.html">어드벤처 뉴스</a></li>
+						</ul>
+					</nav>
+					<div class="gnb_btm">
+						<a href="#"><i></i>사업계획서 보내기</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //header -->
+		<section id="contents">
+            <h1 id="pageTit" class="blind">드루와</h1>
+            <div class="inner">
+                <div class="cs_wrap">
+                    <ul class="tabmenu tab_motion">
+                        <li><a href="#qa_cont1">투자 문의</a></li>
+                        <li><a href="#qa_cont2">오시는 길 </a></li>
+                    </ul>
+                    <div id="qa_cont1" class="tab_cont">
+                       <div class="qa_area">
+                            <h3>지원방법!</h3>
+                            <p>간단하고 빠르고 친절합니다.</p>
+                            <ol>
+                                <li class="qa_li_01">
+                                    <div>
+                                        <span class="num">1</span>
+                                        <i data-animation="bounceIn" ></i>
+                                    </div>
+                                    <p class="txt">신청서 준비하기</p>
+                                </li>
+                                <li class="qa_li_02">
+                                    <div>
+                                        <span class="num">2</span>
+                                        <i data-animation="bounceIn" style="animation-delay: 0.3s"></i>
+                                    </div>
+                                    <p class="txt">신청내용 메일 보내기</p>
+                                </li>
+                                <li class="qa_li_03">
+                                    <div>
+                                        <span class="num">3</span>
+                                        <i data-animation="bounceIn" style="animation-delay: 0.6s"></i>
+                                    </div>
+                                     <p class="txt">담당자 확인 메시지 받기</p>
+                                </li>
+                            </ol>
+                            <p class="txt">고민하지 마세요. 그냥 보내주세요. <br>48시간 안으로 피드백 반드시 드립니다.</p>
+                            <a href="mailto:IR@cntt.co.kr" class="btn btn_sky btn_qa_link" data-animation="zoomIn">IR@cntt.co.kr</a>
+                        </div>
+                    </div>
+                    <div id="qa_cont2" class="tab_cont">
+                        <div class="location_area">
+							<h3>오시는 길</h3>
+							<p>서대문 본 센터로 오시는 길을 안내합니다.</p>
+							<div class="map_wrap">
+								<div id="map"></div>
+								<p class="address">서울시 서대문구 증가로29길 35북가좌동, 씨엔티테크빌딩</p>
+								<ul>
+									<li><strong>T</strong> 02.309.0380</li>
+									<li><strong>F</strong> 02.309.0381</li>
+								</ul>
+								<dl>
+									<dt>지하철</dt>
+									<dd>6호선 증산역(명지대 앞) 1번 출구 또는 2번 출구</dd>
+								</dl>
+								<dl>
+									<dt>버스</dt>
+									<dd>
+										<span><strong>간선버스</strong> 721  751  760</span>
+										<span><strong>지선버스</strong> 7025  7613  7738</span>
+									</dd>
+								</dl>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+           
+		</section>
+		<!-- footer -->
+		<footer>
+			<div class="inner">
+				<p class="ft_mail">우선, <a href="mailto:IR@cntt.co.kr">IR@cntt.co.kr</a>로 메일 보내주세요.</p>
+				<h2 class="ft_logo"><a href="index.html">CNTTECH ACCELERATOR</a></h2>
+				<p class="copyright">© 2019 CNTIR CO.LTD All RIGHT RESERVED</p>
+			</div>
+		</footer>
+		<!-- //footer -->
+    </div>
+    <!-- common pop -->
+	<div id="popShare" class="pop_bg close_none">
+		<article class="pop_wrap">
+			<div class="pop_head"><h1>링크공유</h1></div>
+			<div class="pop_cont">
+				<div class="sns_share">
+					<a href="#" class="ic_kakao"><span>kakaostory</span> </a>
+					<a href="#" class="ic_facebook"><span>Facebook</span></a>
+				</div>
+				<a href="#" class="copy">http://www.cntir.co.kr <span>복사</span></a>
+			</div>
+			<a href="#" role="button" class="btn_close pop_close">팝업닫기</a>
+		</article>
+	</div>
+	<!-- //common pop -->
+</body>
+</html>

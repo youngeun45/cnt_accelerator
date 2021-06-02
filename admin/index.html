@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>씨엔티테크 액셀러레이터 관리자</title>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<meta property="og:image" content="resources/images/common/logo_300x300.png" />
+	<meta name="twitter:image" content="resources/images/common/logo_300x300.png">
+	<link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.ico" />
+
+	<!-- style -->
+	<link rel="stylesheet" href="resources/css/cntir_adm.css" media="all">
+
+	<!-- javascript -->
+	<script src="resources/js/lib/jquery-1.12.4.min.js"></script>
+	<script src="resources/js/lib/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="resources/js/lib/html5Shiv.js"></script>
+	<![endif]-->
+	<script src="resources/js/plugins.js"></script>
+	<script src="resources/js/ui-front.js"></script>
+	<!-- //javascript -->
+</head>
+<body class="index">
+	<div class="login_wrap">
+		<h1>로그인</h1>
+		<div class="box">
+			<h2><img src="resources/images/logo.png" alt="씨엔티테크 액셀러레이터"></h2>
+			<p class="t_center bold mb20 t_black">씨엔티테크 액셀러레이터 어드민 입니다.</p>
+			<ul>
+				<li class="inp">
+					<label>
+						<input type="text" name="" id="userId" class="input" title="관리자 계정">
+						<span class="lbltxt">관리자 계정</span>
+					</label>
+					<a href="#" class="btnDel">삭제</a>
+				</li>
+				<li class="inp">
+					<label>
+						<input type="password" name="" id="" class="input" title="비밀번호">
+						<span class="lbltxt">비밀번호</span>
+					</label>
+					<a href="#" class="btnDel">삭제</a>
+				</li>
+				<li class="btn">
+					<a href="#" class="button btn_black f_right btn_Login">로그인</a>
+				</li>
+			</ul>
+		</div>
+		<p>© 2019 CNTIR CO.LTD All RIGHT RESERVED</p>
+	</div>
+<script>
+	$(function(){		
+		//센터 정렬
+		vaMid('.login_wrap')
+		$(window).resize(function(){
+			vaMid('.login_wrap')
+		})
+
+		//input  삭제버튼(.btnDel) 노출
+		$('.inp .input').focus(function(){
+			$(this).closest('li').addClass('focus');
+		}).blur(function(){
+			if($(this).val() == ''){
+				$(this).closest('li').removeClass('focus');
+			}
+		});
+
+		//.btnDel 버튼 기능
+		$('.btnDel').click(function(e){
+			e.preventDefault();	
+			$(this).prev().find('.input').val('').focus();
+		});
+	})
+</script>
+</body>
+</html>
